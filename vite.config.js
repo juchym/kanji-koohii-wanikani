@@ -6,17 +6,19 @@ import preact from "@preact/preset-vite";
 import pkg from "./package.json" with { type: "json" };
 
 const USERSCRIPT_HEADER = `// ==UserScript==
-// @name         Kanji Koohii WaniKani Integration
-// @namespace    https://github.com/juchym
-// @version      ${pkg.version}
-// @description  ${pkg.description}
-// @match https://kanji.koohii.com/study/kanji
-// @match https://kanji.koohii.com/study/kanji/
-// @match https://kanji.koohii.com/study/kanji/*
-// @match https://kanji.koohii.com/study/kanji?restudy
-// @grant        GM.setValue
-// @grant        GM.getValue
-// @connect      api.wanikani.com
+// @name          Kanji Koohii WaniKani Integration
+// @namespace     https://github.com/juchym
+// @version       ${pkg.version}
+// @description   ${pkg.description}
+// @updateURL     https://github.com/juchym/kanji-koohii-wanikani/releases/latest/download/script.user.js
+// @downloadURL   https://github.com/juchym/kanji-koohii-wanikani/releases/latest/download/script.user.js
+// @match         https://kanji.koohii.com/study/kanji
+// @match         https://kanji.koohii.com/study/kanji/
+// @match         https://kanji.koohii.com/study/kanji/*
+// @match         https://kanji.koohii.com/study/kanji?restudy
+// @grant         GM.setValue
+// @grant         GM.getValue
+// @connect       api.wanikani.com
 // ==/UserScript==`;
 
 export default defineConfig({
