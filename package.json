@@ -21,5 +21,13 @@
     "dependencies": {
         "preact": "^10.29.8",
         "zod": "^4.4.3"
+    },
+    "packageManager": "pnpm@12.4.1",
+    "devEngines": {
+        "runtime": {
+            "name": "node",
+            "version": "26.8.2",
+            "onFail": "download"
+        }
     }
 }
