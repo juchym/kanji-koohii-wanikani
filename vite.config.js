@@ -1,12 +1,15 @@
 import { resolve } from "node:path";
+
 import { defineConfig } from "vite";
 import preact from "@preact/preset-vite";
+
+import pkg from "./package.json" with { type: "json" };
 
 const USERSCRIPT_HEADER = `// ==UserScript==
 // @name         Kanji Koohii WaniKani Integration
 // @namespace    https://github.com/juchym
-// @version      1.0.0
-// @description  Show the WaniKani mnemonics and custom stories in Kanji Koohii
+// @version      ${pkg.version}
+// @description  ${pkg.description}
 // @match https://kanji.koohii.com/study/kanji
 // @match https://kanji.koohii.com/study/kanji/
 // @match https://kanji.koohii.com/study/kanji/*
