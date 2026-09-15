@@ -1,0 +1,25 @@
+{
+    "name": "kanji-koohii-wanikani",
+    "version": "1.0.0",
+    "description": "Tampermonkey userscript that integrates WaniKani mnemonics and custom stories into Kanji Koohii.",
+    "author": "Euthy",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/juchym/kanji-koohii-wanikani.git"
+    },
+    "type": "module",
+    "scripts": {
+        "build": "vite build",
+        "dev": "vite --watch"
+    },
+    "devDependencies": {
+        "@preact/preset-vite": "^2.10.6",
+        "prettier": "3.9.6",
+        "typescript": "^7.0.2",
+        "vite": "^8.2.2"
+    },
+    "dependencies": {
+        "preact": "^10.29.8",
+        "zod": "^4.4.3"
+    }
+}

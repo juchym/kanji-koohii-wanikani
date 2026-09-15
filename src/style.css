@@ -1,0 +1,100 @@
+.wanikani-panel {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    color: #333;
+    font-weight: 350;
+    background: #fff;
+    border: 1px solid #e8e5c9;
+    box-shadow: 0 1px 2px #aaa5824d;
+    padding: 12px 15px;
+    margin-bottom: 1em;
+}
+
+.wanikani-panel__title {
+    font-size: 28px;
+    border-bottom: 1px solid #cad0d6;
+}
+
+.wanikani-panel__meanings {
+    margin-bottom: 8px;
+    padding-left: 8px;
+    border-left: 4px solid;
+}
+
+.wanikani-panel__meaning {
+    display: flex;
+    align-items: center;
+    margin-bottom: 4px;
+}
+
+.wanikani-panel__meaning-title {
+    color: #6b7079;
+    margin-right: 12px;
+}
+
+.wanikani-panel__meaning--primary .wanikani-panel__meaning-title,
+.wanikani-panel__meaning--primary .wanikani-panel__meaning-items {
+    font-weight: 500;
+}
+
+.wanikani-panel__section--kanji .wanikani-panel__meanings {
+    border-left-color: #ff00aa;
+}
+
+.wanikani-panel__section--radical .wanikani-panel__meanings {
+    border-left-color: #00aaff;
+}
+
+.wanikani-panel__highlight {
+    padding: 0 4px;
+    border-radius: 4px;
+    white-space: no-wrap;
+}
+
+.wanikani-panel__highlight--radical {
+    color: #0069ac;
+    background-color: #cbebff;
+}
+
+.wanikani-panel__highlight--reading {
+    color: #0069ac;
+    background-color: #cbebff;
+}
+
+.wanikani-panel__highlight--kanji {
+    color: #b9007b;
+    background-color: #ffd4f1;
+}
+
+/* User story panel */
+
+.user-story {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    color: #100800;
+    text-align: justify;
+    word-wrap: break-word;
+    line-height: 1.5em;
+    background: #fff;
+    border: 1px solid #e8e5c9;
+    box-shadow: 0 1px 2px #aaa5824d;
+    padding: 20px 20px 27px 20px;
+    margin-bottom: 1em;
+}
+
+.user-story p {
+    margin: 0;
+}
+
+.user-story p + p {
+    text-indent: 1rem;
+}
+
+.user-story__asterisk-story {
+    padding-top: 8px;
+}
+
+#EditStoryComponent + [data-wk-root],
+#EditStoryComponent + [data-user-story-root] {
+    margin-top: -1em;
+}
