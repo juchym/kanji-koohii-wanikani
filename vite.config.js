@@ -7,6 +7,7 @@ import pkg from "./package.json" with { type: "json" };
 
 const USERSCRIPT_HEADER = `// ==UserScript==
 // @name          Kanji Koohii WaniKani Integration
+// @author        ${pkg.author}
 // @namespace     https://github.com/juchym
 // @version       ${pkg.version}
 // @description   ${pkg.description}

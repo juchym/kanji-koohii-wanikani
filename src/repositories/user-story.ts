@@ -23,7 +23,7 @@ export class UserStoryCache {
     }
 
     async hasStories(): Promise<boolean> {
-        const stories = getJson(UserStoryCache.CACHE_KEY);
+        const stories = await getJson(UserStoryCache.CACHE_KEY);
         return stories !== null;
     }
 
