@@ -142,9 +142,7 @@ export default function UserStoryPanel({
                         <div
                             class="user-story__asterisk-story"
                             dangerouslySetInnerHTML={{
-                                __html: replaceMarkdown(
-                                    state.story.asterisk,
-                                ),
+                                __html: replaceMarkdown(state.story.asterisk),
                             }}
                         />
                     )}

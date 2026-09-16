@@ -103,13 +103,8 @@ export default function WaniKaniPanel({
         handleTokenSubmit(token);
     }
 
-
     async function clearCache() {
-        if (
-            confirm(
-                "You will have to enter your API token again. Continue?",
-            )
-        ) {
+        if (confirm("You will have to enter your API token again. Continue?")) {
             await repository.clear();
             await settings.clearApiToken();
             setState({ type: "no-token" });

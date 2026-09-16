@@ -61,5 +61,4 @@ const WKResponse = z.discriminatedUnion("object", [
     WKRadicalResource,
 ]);
 
-
 export type WKSubjectType = "kanji" | "radical"; // there is more
